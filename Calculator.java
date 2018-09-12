@@ -1,26 +1,38 @@
-public class Calculator{
-	public Calculator() {
-		System.out.println("Hello from Calcy");
-	}
-	public void addNumbers (double a,double b) {
-		System.out.println("Add numbers: " + (a+b));
+
+public class Calculator {
+		String colour;
+		public Calculator(String colour){
+			this.colour=colour;
+		}
 		
-	}
-	public void subtractNumbers (double a, double b) {
-		System.out.println("Subtract numbers: " + (a-b));
-		
-	}
-	public void mutiplyNumbers (double a, double b) {
-		System.out.println("Multiply numbers: " + (a*b));
-		
-	}
-	public void divideNumbers (double a, double b) {
-		System.out.println("Divide Numbers: " + (a/b));
-		
-	}
-	public void modNumbers(double a, double b) {
-		System.out.println("Modulus of numbers: " + (a%b));
-		
+		public /*static*/ void getColour(){
+			System.out.println(this.colour);
+		}
 	
+	public static double add(double a, double b){
+		
+		return a+b;
+	}
+	
+	public static double subtract(double a, double b){
+		
+		return a-b;
+	}
+	
+	public static double multiple(double a, double b){
+		
+		return a*b;
+	}
+	
+	public static double divide(double a, double b){
+	
+	if (b==0){
+		
+		System.out.println("Canoot divide by 0");
+		return -1;
+		
+		}
+		
+		return a/b;
 	}
 }

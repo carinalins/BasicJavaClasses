@@ -1,33 +1,28 @@
-public class Teste{
-   
-   public static void main(String[] args){
-        
-	int dias = 7;
-	int offset = 0; // range from 0 to 6 
-	int comeco = 1 - offset;
-	int fim = 31;
- 
-	for (int j=comeco; j<=fim; j++) {
- 
-		if (j>0; j<10) {
-	 
-		System.out.print(" "+j+" "); // just neater output
-	
-		} else if { 
-		
-		System.out.print(j+" "); 
-	
-		} else {
-		System.out.print("   "); // 3 spaces
-		}
- 
-			//if (j>0 && j%cols==0) {
-		//System.out.println(); // new row or line
-		} // end if
- 
-	comeco=j++;
- 
-	} // end j for loop
+import java.util.*;
 
-    }
-//}
+public class Teste{
+	
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+
+		int[][] matrix = new int[3][3];
+
+		for (int i=0;i<matrix.length ; i++) {
+
+			for (int j=0;j<matrix[i].length ; j++) {
+				System.out.print("Digite um elemento para a matrix: " + i + " " + j);				
+			
+			matrix[i][j] = scan.nextInt();
+			}
+		}
+
+		/*for (int i=0; i<matrix.length; i++) {
+			for (int j=0; j<matrix[i].length; j++ ) {
+				System.out.print("[" + matrix[i][j] + "]");
+			}
+		System.out.println(" ");			
+		}*/
+		
+	}
+}
