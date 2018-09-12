@@ -1,4 +1,4 @@
-public class ShoppingList{
+public class ShoppingListUsingArrays{
 	
 	public static void main (String[] args){
 		
